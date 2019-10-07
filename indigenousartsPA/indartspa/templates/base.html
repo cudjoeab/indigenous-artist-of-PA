@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- this title shows up in the tab of a browser, you can change this later -->
+    <title>Indigenous Artists of Prince Albert</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="topnav">
+    <a href="https://website-project.kingkie.repl.co">Home</a>
+    <a href="https://Artists--kratt03.repl.co">Artists</a>
+    <a href="{% url 'gallery' %}" class="pagelinks">Gallery</a>
+    <!-- <a class="active" href="https://Submit--kratt03.repl.co">Submit</a> -->
+    <a href="{% url 'submissions' %}" class="pagelinks">Submit</a>
+    <a href="https://About.kratt03.repl.co">About</a>
+    <a href="https://Contact-Page--kratt03.repl.co">Contact</a>
+</div>
+    {% block content %}{% endblock content %}
+</body>
+</html>
